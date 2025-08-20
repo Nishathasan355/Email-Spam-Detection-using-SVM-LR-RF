@@ -1,55 +1,58 @@
-📧 Email Spam Detection using SVM, Logistic Regression & Random Forest
-🔹 Introduction
+# Email Spam Detection
+*Using SVM, Logistic Regression, and Random Forest*
 
-This project is about detecting whether an email is spam or ham (not spam).
-I built a machine learning model that learns patterns from emails and classifies them correctly.
+---
 
-🔹 Motivation
+## Introduction
+This project detects whether an email is **Spam** or **Ham (Not Spam)** using machine learning.
+It applies **Natural Language Processing (NLP)** techniques to clean email text and trains classifiers to identify spam patterns.
 
-Email spam wastes time and may contain harmful links.
+---
 
-I wanted to apply machine learning (ML) and natural language processing (NLP) to solve this real-world problem.
+## Motivation
+- Spam emails waste time and may contain harmful links.
+- Machine learning provides an effective solution for **automatic spam filtering**.
+- Testing multiple models (SVM, LR, RF) helps find the best performer.
 
-By comparing different ML models, I can see which one works best for spam detection.
+---
 
-🔹 Tools & Technology
+## Tools & Technology
+- **Python**
+- **Jupyter / Google Colab**
+- **scikit-learn** → Machine Learning models
+- **NLTK** → Text preprocessing
+- **pandas & numpy** → Data handling
 
-Python
+---
 
-Google Colab / Jupyter Notebook
+## Models Used
+- **Logistic Regression** → Simple, interpretable baseline
+- **Support Vector Machine (SVM)** → Strong at separating spam vs ham
+- **Random Forest** → Ensemble model for better stability
 
-scikit-learn (ML models)
+---
 
-NLTK (text preprocessing: stopwords, stemming)
+## Workflow
+1. Load dataset (emails labeled spam/ham)
+2. Clean text (remove stopwords, punctuation, stemming)
+3. Convert text into vectors (CountVectorizer / TF-IDF)
+4. Train ML models (LR, SVM, RF)
+5. Predict new emails → Spam or Ham
 
-pandas, numpy (data handling)
+---
 
-🔹 Machine Learning Models Used
+## Future Scope
+- Deploy as a **web app** for real-time spam detection
+- Add **deep learning models (RNN, LSTM, BERT)**
+- Support **multilingual spam detection**
+- Optimize for faster predictions
 
-Logistic Regression – simple and effective for text classification.
+---
 
-Support Vector Machine (SVM) – powerful for separating spam vs ham.
+## How to Run
+```bash
+# Clone repository
+git clone https://github.com/your-username/Email-Spam-Detection-using-SVM-LR-RF.git
 
-Random Forest – ensemble method for better accuracy and stability.
-
-🔹 How It Works
-
-Load dataset (emails labeled as spam or ham).
-
-Clean the text (remove stopwords, punctuation, stemming).
-
-Convert text to numbers using TF-IDF vectorizer.
-
-Train models (LR, SVM, RF).
-
-Predict whether new email is spam or ham.
-
-🔹 Future Scope
-
-Deploy as a web app to detect spam in real time.
-
-Add deep learning models (RNN, LSTM, BERT) for better accuracy.
-
-Handle multilingual spam detection.
-
-Optimize for faster predictions in production.
+# Open Jupyter Notebook
+jupyter notebook emailspam.ipynb
